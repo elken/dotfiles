@@ -1,0 +1,40 @@
+! Color scheme
+!#include ".Xresources.d/dark"
+#include ".Xresources.d/light"
+Xcursor.theme: Numix-Cursor
+
+! Transparency
+urxvt*.depth: 32
+
+! Misc plugin junk
+urxvt*.scrollBar: false
+urxvt*.perl-ext-common:  default,url-select,clipboard
+urxvt*.url-select.launcher: firefox
+urxvt*.url-select.underline: true
+urxvt*.keysym.M-u: perl:url-select:select_next
+! Clipboard
+urxvt*.iso14755: false
+urxvt*.keysym.Shift-Control-C: perl:clipboard:copy
+urxvt*.keysym.Shift-Control-V: perl:clipboard:paste
+
+! Icon
+urxvt*.iconFile: /usr/share/icons/gnome/scalable/apps/utilities-terminal-symbolic.svg
+
+! Ctrl-Arrow nav
+urxvt*.keysym.Control-Up:   \033[1;5A
+urxvt*.keysym.Control-Down:    \033[1;5B
+urxvt*.keysym.Control-Left:    \033[1;5D
+urxvt*.keysym.Control-Right:    \033[1;5C
+
+! Misc
+urxvt*urgentOnBell: true
+urxvt*.font: xft:Meslo\ LG\ M\ for\ Powerline::size=8
+xterm*faceName: Meslo\ LG\ M\ for\ Powerline:size=8
+
+! Scrolling
+urxvt*.scrollTtyOutput: false
+urxvt*.scrollWithBuffer: true
+urxvt*.scrollTtyKeypress: true
+urxvt*.secondaryScreen: 1
+urxvt*.secondaryScroll: 0
+

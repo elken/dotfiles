@@ -1,0 +1,50 @@
+alias make='make -j`expr $(nproc) + 1` -l$(nproc)'
+alias c='clear'
+alias ls='ls --color=auto'
+alias q='exit'
+alias vim='nvim'
+alias ff='fzf'
+alias v='f -e vim'
+alias vf='vim $(fzf)'
+alias wine32='WINEARCH=win32 WINEPREFIX=~/.wine32 wine'
+alias winetricks32='WINEARCH=win32 WINEPREFIX=~/.wine32 winetricks'
+alias so='source'
+alias reboot='sudo systemctl reboot'
+alias shutdown='sudo systemctl poweroff'
+alias sprUp="curl -F 'sprunge=<-' http://sprunge.us"
+alias diff="/usr/bin/diff -rupN"
+
+# Git
+alias workdone="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --author=elken"
+alias git='hub'
+alias workflow="g add .;gca;gp"
+
+if [ "$(cat /etc/os-release | awk '/^ID/ {print substr($1, 4)}')" = "arch" ]; then
+    alias pacupg='pacaur -Syu'
+    alias pacin='pacaur -S'
+    alias pacins='pacaur -U'
+    alias pacre='pacaur -R'
+    alias pacrem='pacaur -Rns'
+    alias pacrep='pacaur -Si'
+    alias pacreps='pacaur -Ss'
+    alias pacloc='pacaur -Qi'
+    alias paclocs='pacaur -Qs'
+
+    alias pacupd='pacaur -Sy && sudo abs'
+    alias pacinsd='pacaur -S --asdeps'
+    alias pacmir='pacaur -Syy'
+
+    alias devchrrun='sudo arch-nspawn $CHROOT/dirty/root'
+    alias devchrbuild='makechrootpkg -c -r $CHROOT/dirty'
+    alias cleanchrrun='sudo arch-nspawn $CHROOT/clean/root'
+    alias cleanchrbuild='sudo makechrootpkg -c -r $CHROOT/clean'
+elif [ "$(cat /etc/os-release | awk '/^ID/ {print substr($1, 4)}')" = "debian" ]; then
+    alias pacin="sudo apt-fast install"
+    alias pacrem="sudo apt remove"
+    alias pacmir="sudo apt-fast update; sudo apt list --upgradable"
+    alias pacupg="sudo apt-fast upgrade"
+    alias pacsearch="sudo apt search"
+    alias pacrep="sudo apt-file list"
+    alias pacclean="sudo apt-get autoclean"
+    alias pacautorem="sudo apt-get autoremove"
+fi
