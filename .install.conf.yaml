@@ -7,12 +7,20 @@
 - link:
     ~/.aliases: aliases
     ~/.compton.conf: compton.conf
+    ~/.config/dunst: config/dunst
     ~/.fbtermrc: fbtermrc
-    ~/.Xresources: Xresources
+    ~/.fonts: fonts/
     ~/.gitconfig: gitconfig
+    ~/.icons: icons
+    ~/.pentadactyl: pentadactyl/
+    ~/.pentadactylrc: pentadactylrc
+    ~/.themes: themes/
+    ~/.tmux: tmux/
     ~/.tmux.conf: tmux.conf
-    ~/.vim: vim/
     ~/.vimrc: vim/vimrc
+    ~/.vim: vim/
+    ~/.Xresources: Xresources
+    ~/.Xresources.d: Xresources.d
     ~/.zsh: zsh/
 
 - shell:
