@@ -6,14 +6,17 @@
 
 - link:
     ~/.aliases: .aliases
+    ~/bin: bin/
     ~/.compton.conf: .compton.conf
     ~/.config/dunst: .config/dunst
+    ~/.dwm: .dwm/
     ~/.fbtermrc: .fbtermrc
     ~/.fonts: .fonts/
     ~/.gitconfig: .gitconfig
     ~/.icons: .icons
     ~/.pentadactyl: .pentadactyl/
     ~/.pentadactylrc: .pentadactylrc
+    ~/.st: .st/
     ~/.themes: .themes/
     ~/.tmux: .tmux/
     ~/.tmux.conf: .tmux.conf

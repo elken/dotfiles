@@ -10,3 +10,9 @@
 [submodule "bin"]
 	path = bin
 	url = git://github.com/elken/bin.git
+[submodule ".dwm"]
+	path = .dwm
+	url = git://github.com/elken/dwm.git
+[submodule ".st"]
+	path = .st
+	url = git://github.com/elken/st.git
