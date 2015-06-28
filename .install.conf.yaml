@@ -20,7 +20,7 @@
     ~/.themes: .themes/
     ~/.tmux: .tmux/
     ~/.tmux.conf: .tmux.conf
-    ~/.vimrc: .vim/vimrc
+    ~/.vimrc: .vim./vimrc
     ~/.vim: .vim/
     ~/.Xresources: .Xresources
     ~/.Xresources.d: .Xresources.d

@@ -1,0 +1,14 @@
+[user]
+	name = Ellis Kenyo
+	email = elken.tdos@gmail.com
+[push]
+	default = simple
+[github]
+	user = elken
+[core]
+	editor = nvim
+	excludefile = /home/elken/.gitignore
+[alias]
+      pu = !"git fetch origin -v; git fetch upstream -v; git merge upstream/master"
+[hub]
+	protocol = ssh
