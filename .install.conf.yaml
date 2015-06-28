@@ -5,22 +5,23 @@
     - git submodule update --init --recursive
 
 - link:
-    ~/.aliases: aliases
-    ~/.compton.conf: compton.conf
-    ~/.config/dunst: config/dunst
-    ~/.fbtermrc: fbtermrc
-    ~/.fonts: fonts/
-    ~/.gitconfig: gitconfig
-    ~/.icons: icons
-    ~/.pentadactyl: pentadactyl/
-    ~/.pentadactylrc: pentadactylrc
-    ~/.themes: themes/
-    ~/.tmux: tmux/
-    ~/.tmux.conf: tmux.conf
-    ~/.vimrc: vim/vimrc
-    ~/.vim: vim/
-    ~/.Xresources: Xresources
-    ~/.Xresources.d: Xresources.d
-    ~/.zsh: zsh/
+    ~/.aliases: .aliases
+    ~/.compton.conf: .compton.conf
+    ~/.config/dunst: .config/dunst
+    ~/.fbtermrc: .fbtermrc
+    ~/.fonts: .fonts/
+    ~/.gitconfig: .gitconfig
+    ~/.icons: .icons
+    ~/.pentadactyl: .pentadactyl/
+    ~/.pentadactylrc: .pentadactylrc
+    ~/.themes: .themes/
+    ~/.tmux: .tmux/
+    ~/.tmux.conf: .tmux.conf
+    ~/.vimrc: .vim/vimrc
+    ~/.vim: .vim/
+    ~/.Xresources: .Xresources
+    ~/.Xresources.d: .Xresources.d
+    ~/.zsh: .zsh/
 
 - shell:
+    - for i in zlogin zlogout zpreztorc zprofile zshenv zshrc; do ln -f .zsh/prezto/runcoms/$i ~/.$i; done
