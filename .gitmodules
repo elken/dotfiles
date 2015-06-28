@@ -7,3 +7,6 @@
 [submodule ".vim"]
 	path = .vim
 	url = git://github.com/elken/.vim.git
+[submodule "bin"]
+	path = bin
+	url = git://github.com/elken/bin.git
