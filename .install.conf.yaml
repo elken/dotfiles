@@ -3,6 +3,8 @@
 - shell:
     - mkdir -p ~/.config
     - git submodule update --init --recursive
+    - bash <(curl aur.sh) -si cower pacaur
+    - pacaur -S --needed --noconfirm --noedit $(< pkg.txt)
 
 - link:
     ~/.aliases: .aliases
@@ -24,7 +26,10 @@
     ~/.vim: .vim/
     ~/.Xresources: .Xresources
     ~/.Xresources.d: .Xresources.d
+    ~/.zlogin: .zsh/prezto/runcoms/zlogin
+    ~/.zlogout: .zsh/prezto/runcoms/zlogout
+    ~/.zpreztorc: .zsh/prezto/runcoms/zpreztorc
+    ~/.zprofile: .zsh/prezto/runcoms/zprofile
+    ~/.zshenv: .zsh/prezto/runcoms/zshenv
+    ~/.zshrc: .zsh/prezto/runcoms/zshrc
     ~/.zsh: .zsh/
-
-- shell:
-    - for i in zlogin zlogout zpreztorc zprofile zshenv zshrc; do ln -f .zsh/prezto/runcoms/$i ~/.$i; done
