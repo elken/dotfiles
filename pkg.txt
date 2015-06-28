@@ -11,14 +11,13 @@ fbv
 firefox
 fortune-mod
 fzf
-google-chrome
 imagemagick
 megasync
 neovim-git
-python2-neovim
+python2-neovim-git
 python2-notify
 python2-pip
-python-neovim
+python-neovim-git
 rxvt-unicode-patched
 screenfetch
 scrot
