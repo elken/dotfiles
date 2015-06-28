@@ -3,8 +3,6 @@
 - shell:
     - mkdir -p ~/.config
     - git submodule update --init --recursive
-    - bash <(curl aur.sh) -si cower pacaur
-    - pacaur -S --needed --noconfirm --noedit $(< pkg.txt)
 
 - link:
     ~/.aliases: .aliases
