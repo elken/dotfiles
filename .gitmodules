@@ -16,3 +16,6 @@
 [submodule ".zsh/powerline"]
 	path = .zsh/powerline
 	url = https://github.com/elken/powerline-shell
+[submodule ".vim"]
+	path = .vim
+	url = git://github.com/elken/.vim.git
