@@ -10,6 +10,7 @@
 [submodule ".dwm"]
 	path = .dwm
 	url = git://github.com/elken/dwm.git
+        branch = 6.1
 [submodule ".st"]
 	path = .st
 	url = git://github.com/elken/st.git

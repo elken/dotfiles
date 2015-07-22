@@ -16,11 +16,11 @@ function notifyosd-precmd() {
         fi
         if [ $retval -gt 0 ]; then
 			cmdstat="with warning"
-			sndstat="/usr/share/sounds/gnome/default/alerts/sonar.ogg"
+			sndstat="/usr/share/sounds/freedesktop/stereo/dialog-warning.oga"
 			urgency="critical"
 		else
             cmdstat="successfully"
-			sndstat="/usr/share/sounds/gnome/default/alerts/glass.ogg"
+			sndstat="/usr/share/sounds/freedesktop/stereo/bell.oga"
 			urgency="normal"
         fi
         if [ ! -z "$cmd" -a $cmd_secs -gt 10 ]; then
@@ -31,11 +31,11 @@ function notifyosd-precmd() {
 				cmd_time="$cmd_secs seconds"
 			fi
             if [ ! -z $SSH_TTY ] ; then
-                notify-send -i utilities-terminal \
+                notify-send -t 5000 -i utilities-terminal \
 						-u $urgency "$cmd_basename on `hostname` completed $cmdstat" "\"$cmd\" took $cmd_time"; \
 						play -q $sndstat
             else
-                notify-send -i utilities-terminal \
+                notify-send -t 5000 -i utilities-terminal \
 						-u $urgency "$cmd_basename completed $cmdstat" "\"$cmd\" took $cmd_time"; \
 						play -q $sndstat
             fi

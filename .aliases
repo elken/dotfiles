@@ -19,7 +19,7 @@ alias workdone="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Cr
 alias git='hub'
 alias workflow="g add .;gca;gp"
 
-if [ "$(cat /etc/os-release | awk '/^ID/ {print substr($1, 4)}')" = "arch" ]; then
+if [ "$(cat /etc/os-release | awk '/^ID=/ {print substr($1, 4)}')" = "arch" ] || [ "$(cat /etc/os-release | awk '/^ID=/ {print substr($1, 4)}')" = "antergos" ]; then
     alias pacupg='pacaur -Syu'
     alias pacin='pacaur -S'
     alias pacins='pacaur -U'

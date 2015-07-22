@@ -2,6 +2,7 @@
 
 - shell:
     - mkdir -p ~/.config
+    - mkdir -p ~/.ncmpcpp
     - git submodule update --init --recursive
 
 - link:
@@ -10,11 +11,14 @@
     ~/.compton.conf:   .compton.conf
     ~/.config/dunst:   .config/dunst
     ~/.config/termite: .config/termite
+    ~/.dircolors:      .dircolors
     ~/.dwm:            .dwm/
     ~/.fbtermrc:       .fbtermrc
     ~/.fonts:          .fonts/
     ~/.gitconfig:      .gitconfig
     ~/.icons:          .icons
+    ~/.mpdconf:        .mpdconf
+    ~/.ncmpcpp/config: .ncmpcpp/config
     ~/.pentadactyl:    .pentadactyl/
     ~/.pentadactylrc:  .pentadactylrc
     ~/.st:             .st/
