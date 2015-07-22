@@ -32,7 +32,7 @@ audio_output {
 
 # Files and directories #######################################################
 #
-music_directory    "/mnt/Warehouse/Music"
+music_directory    "~/Music"
 playlist_directory "~/.mpd/playlists"
 db_file            "~/.mpd/database"
 log_file           "~/.mpd/log"

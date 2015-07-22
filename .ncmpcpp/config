@@ -1,4 +1,4 @@
-mpd_music_dir                         = "/mnt/Warehouse/Music"
+mpd_music_dir                         = "~/Music"
 ncmpcpp_directory                     = "~/.ncmpcpp"
 lyrics_directory                      = "~/.mpd/lyrics"
 
