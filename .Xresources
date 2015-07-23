@@ -5,6 +5,7 @@ Xcursor.theme: Numix-Cursor
 
 ! Transparency
 urxvt*.depth: 32
+urxvt*.background: [80]#fdf6e3
 
 ! Misc plugin junk
 urxvt*.scrollBar: false
