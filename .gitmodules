@@ -17,3 +17,4 @@
 [submodule ".vim"]
 	path = .vim
 	url = git://github.com/elken/.vim.git
+        branch = neovim
