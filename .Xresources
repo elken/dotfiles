@@ -1,11 +1,12 @@
 ! Color scheme
-!#include ".Xresources.d/dark"
-#include ".Xresources.d/light"
+#include ".Xresources.d/dark"
+!#include ".Xresources.d/light"
 Xcursor.theme: Numix-Cursor
 
 ! Transparency
 urxvt*.depth: 32
-urxvt*.background: [80]#fdf6e3
+!urxvt*.background: [80]#eee8d5
+urxvt*.background:   [80]#002b36
 
 ! Misc plugin junk
 urxvt*.scrollBar: false
@@ -29,7 +30,7 @@ urxvt*.keysym.Control-Right:    \033[1;5C
 
 ! Misc
 urxvt*urgentOnBell: true
-urxvt*.font: xft:Meslo\ LG\ M\ for\ Powerline::size=8
+urxvt*.font: xft:Hasklig::size=8
 xterm*faceName: Meslo\ LG\ M\ for\ Powerline:size=8
 
 ! Scrolling

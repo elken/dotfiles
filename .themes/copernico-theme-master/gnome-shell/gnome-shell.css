@@ -781,14 +781,14 @@ StScrollBar StButton#hhandle:active {
     -natural-hpadding: 12px;
     -minimum-hpadding: 6px;
     font-weight: normal;
-    color: #F0F0F0;
+    color: #002b36;
     transition-duration: 100ms; }
 #panel .panel-button .app-menu-icon {
     -st-icon-style: symbolic;
     margin-left: 4px;
     margin-right: 4px; }
 #panel .panel-button:hover {
-    color: white; }
+    color: #eee8d5; }
 #panel .panel-button:active,
 #panel .panel-button:overview,
 #panel .panel-button:focus,

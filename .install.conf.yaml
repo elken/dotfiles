@@ -21,6 +21,7 @@
     ~/.ncmpcpp/config: .ncmpcpp/config
     ~/.pentadactyl:    .pentadactyl/
     ~/.pentadactylrc:  .pentadactylrc
+    ~/.spacemacs:      .spacemacs
     ~/.st:             .st/
     ~/.themes:         .themes/
     ~/.tmux:           .tmux/
@@ -40,3 +41,5 @@
 - shell:
     - sudo ln -s $HOME/.vim /etc/xdg/nvim
     - sudo ln -s $HOME/.vimrc /etc/xdg/nvim/init.vim
+    - mv $HOME/.emacs.d $HOME/.emacs.d
+    - git clone https://github.com/syl20bnr/spacemacs/ $HOME/.emacs.d

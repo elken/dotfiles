@@ -8,6 +8,7 @@
 [core]
 	editor = nvim
 	excludefile = /home/elken/.gitignore
+	filemode = false
 [alias]
       pu = !"git fetch origin -v; git fetch upstream -v; git merge upstream/master"
 [hub]
