@@ -1,2 +1,3 @@
 .pentadactyl/info
 .tmux/resurrect
+.tmux/plugins
