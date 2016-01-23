@@ -1,12 +1,13 @@
 ! Color scheme
-#include ".Xresources.d/dark"
+!#include ".Xresources.d/dark"
 !#include ".Xresources.d/light"
+#include ".Xresources.d/gruvbox"
 Xcursor.theme: Numix-Cursor
 
 ! Transparency
-urxvt*.depth: 32
+!urxvt*.depth: 32
 !urxvt*.background: [80]#eee8d5
-urxvt*.background:   [80]#002b36
+!urxvt*.background:   [80]#282828
 
 ! Misc plugin junk
 urxvt*.scrollBar: false

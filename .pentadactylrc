@@ -1,4 +1,4 @@
 nmap -builtin ; :
 nmap -builtin : ;
 
-colorscheme solarized-light
+colorscheme gruvbox-dark
