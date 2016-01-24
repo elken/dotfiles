@@ -7,11 +7,11 @@ allow_bold = true
 dynamic_title = true
 urgent_on_bell = true
 clickable_url = true
-font = Meslo LG M for Powerline 8
+font = Hasklig 8
 scrollback_lines = 10000
 search_wrap = true
 #icon_name = terminal
-#geometry = 640x480
+geometry = 1366x768
 
 # "system", "on" or "off"
 cursor_blink = on
@@ -29,35 +29,28 @@ browser = firefox
 #modify_other_keys = false
 
 [colors]
-foreground = #657b83
-foreground_bold = #073642
-#foreground_dim = #888888
-background = #fdf6e3
-cursor = #586e75
-
-# if unset, will reverse foreground and background
-#highlight = #839496
-
-# colors from color0 to color254 can be set
-color0 = #073642
-color1 = #dc322f
-color2 = #859900
-color3 = #b58900
-color4 = #268bd2
-color5 = #d33682
-color6 = #2aa198
-color7 = #eee8d5
-color8 = #002b36
-color9 = #cb4b16
-color10 = #586e75
-color11 = #657b83
-color12 = #839496
-color13 = #6c71c4
-color14 = #93a1a1
-color15 = #fdf6e3
+background      = #282828
+foreground      = #ebdbb2
+foreground_bold = #ebdbb2
+color0          = #282828
+color8          = #928374
+color1          = #cc241d
+color9          = #fb4934
+color2          = #98971a
+color10         = #b8bb26
+color3          = #d79921
+color11         = #fabd2f
+color4          = #458588
+color12         = #83a598
+color5          = #b16286
+color13         = #d3869b
+color6          = #689d6a
+color14         = #8ec07c
+color7          = #a89984
+color15         = #ebdbb2
 
 # 20% background transparency (requires a compositor)
-background = rgba(253, 246, 227, 0.7)
+#background = rgba(253, 246, 227, 0.7)
 
 # if unset, will reverse foreground and background
 #highlight = #2f2f2f
