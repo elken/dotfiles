@@ -3,6 +3,8 @@
 - shell:
     - mkdir -p ~/.config
     - mkdir -p ~/.ncmpcpp
+    - mkdir -p ~/.tmux/plugins
+    - mkdir -p ~/.mpd/lyrics
     - git submodule update --init --recursive
 
 - link:
@@ -43,3 +45,5 @@
     - sudo ln -s $HOME/.vimrc $HOME/.config/nvim/init.vim
     - mv $HOME/.emacs.d $HOME/.emacs.d
     - git clone https://github.com/syl20bnr/spacemacs/ $HOME/.emacs.d
+    - git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
