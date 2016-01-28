@@ -21,8 +21,8 @@
 
 /* GLOBALS */
 stage {
-    font-family: Cantarell, Sans-Serif;
-    font-size: 11pt;
+    font-family: Hasklig, Sans-Serif;
+    font-size: 9pt;
     color: #eeeeec; }
 
 /* WIDGETS */
@@ -781,7 +781,7 @@ StScrollBar StButton#hhandle:active {
     -natural-hpadding: 12px;
     -minimum-hpadding: 6px;
     font-weight: normal;
-    color: #002b36;
+    color: #ffffff;
     transition-duration: 100ms; }
 #panel .panel-button .app-menu-icon {
     -st-icon-style: symbolic;
