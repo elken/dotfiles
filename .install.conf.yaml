@@ -26,7 +26,6 @@
     ~/.spacemacs:      .spacemacs
     ~/.st:             .st/
     ~/.themes:         .themes/
-    ~/.tmux:           .tmux/
     ~/.tmux.conf:      .tmux.conf
     ~/.vimrc:          .vim/.vimrc
     ~/.vim:            .vim/
