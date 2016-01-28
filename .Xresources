@@ -2,7 +2,7 @@
 !#include ".Xresources.d/dark"
 !#include ".Xresources.d/light"
 #include ".Xresources.d/gruvbox"
-Xcursor.theme: Numix-Cursor
+Xcursor.theme: DMZ-Black
 
 ! Transparency
 !urxvt*.depth: 32
