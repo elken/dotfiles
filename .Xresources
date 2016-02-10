@@ -31,7 +31,7 @@ urxvt*.keysym.Control-Right:    \033[1;5C
 
 ! Misc
 urxvt*urgentOnBell: true
-urxvt*.font: xft:Hasklig::size=8
+urxvt*.font: xft:Hasklig:size=8
 xterm*faceName: Meslo\ LG\ M\ for\ Powerline:size=8
 
 ! Scrolling

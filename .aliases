@@ -23,21 +23,7 @@ alias workdone="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Cr
 alias git='hub'
 alias workflow="g add .;gca;gp"
 
-alias pacupg='pacaur -Syu'
-alias pacin='pacaur -S --needed'
-alias pacins='pacaur -U'
-alias pacre='pacaur -R'
-alias pacrem='pacaur -Rns'
-alias pacrep='pacaur -Si'
-alias pacreps='pacaur -Ss'
-alias pacloc='pacaur -Qi'
-alias paclocs='pacaur -Qs'
-
-alias pacupd='pacaur -Sy && sudo abs'
-alias pacinsd='pacaur -S --asdeps'
 alias pacmir='pacaur -Syy'
-
-alias devchrrun='sudo arch-nspawn $CHROOT/dirty/root'
-alias devchrbuild='makechrootpkg -c -r $CHROOT/dirty'
-alias cleanchrrun='sudo arch-nspawn $CHROOT/clean/root'
-alias cleanchrbuild='sudo makechrootpkg -c -r $CHROOT/clean'
+alias pacupg='pacaur -Syu'
+alias pacin='pacaur -S'
+alias pacrem='pacaur -R'
