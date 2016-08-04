@@ -1,8 +1,8 @@
-alias make='make -j`expr $(nproc) + 1` -l$(nproc)'
+alias cat="scat -l"
+alias make='make -j`expr $(gnproc) + 1` -l$(gnproc)'
 alias c='clear'
-alias ls='ls --color=auto'
 alias q='exit'
-alias vim='nvim'
+alias vim='mvim -v'
 alias vimserv='NVIM_LISTEN_ADDRESS=/tmp/nvimsocket nvim'
 alias ff='fzf'
 alias vf='vim $(fzf)'
