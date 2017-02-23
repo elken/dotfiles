@@ -3,12 +3,11 @@
 	email = elken@mykolab.com
         singingkey = 2033FDF3
 [commit]
-        gpgsign = true
+	gpgsign = true
 [push]
 	default = simple
 [github]
 	user = elken
-	oauth-token = f6174e10d454447d9b47323ba2123feaf5a63750
 [core]
 	editor = nvim
 	excludefile = /home/elken/.gitignore
@@ -28,4 +27,11 @@
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 [credential]
-	helper = !/Library/Java/JavaVirtualMachines/jdk1.8.0_77.jdk/Contents/Home/jre/bin/java -Ddebug=false -Djava.net.useSystemProxies=true -jar /usr/local/Cellar/git-credential-manager/1.6.0/libexec/git-credential-manager-1.6.0.jar
+	helper = osxkeychain
+[color "diff"]
+	old = red dim
+	new = green bold
+[fetch]
+	recurseSubmodules = false
+[gpg]
+	program = gpg2

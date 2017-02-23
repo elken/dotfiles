@@ -56,21 +56,24 @@ values."
      dash
      elken
      emacs-lisp
+     emoji
      (evil-snipe :variables
                  evil-snipe-enable-alternate-f-and-t-behaviors t)
+     games
      (git :variables
           git-enable-github-support t
           git-gutter-use-fringe t)
      github
      gtags
-     helm
+     ;; helm
      (ibuffer :variables
               ibuffer-group-buffers-by 'projects)
      java
      latex
      markdown
      org
-     osx
+     (osx :variables
+          osx-use-option-as-meta t)
      semantic
      (shell :variables
             shell-default-height 30
@@ -128,7 +131,7 @@ values."
    ;; with `:variables' keyword (similar to layers). Check the editing styles
    ;; section of the documentation for details on available variables.
    ;; (default 'vim)
-   dotspacemacs-editing-style 'vim
+   dotspacemacs-editing-style 'hybrid
    ;; If non nil output loading progress in `*Messages*' buffer. (default nil)
    dotspacemacs-verbose-loading t
    ;; Specify the startup banner. Default value is `official', it displays
@@ -143,7 +146,6 @@ values."
    ;; Possible values for list-type are:
    ;; `recents' `bookmarks' `projects' `agenda' `todos'."
    dotspacemacs-startup-lists '((recents . 5)
-                                (bookmarks . 5)
                                 (projects . 7))
    ;; Default major mode of the scratch buffer (default `text-mode')
    dotspacemacs-scratch-mode 'text-mode
@@ -355,23 +357,23 @@ you should place your code here."
   (mac-auto-operator-composition-mode)
 
   ;; Evil mappings
-  (define-key evil-motion-state-map ";" 'evil-ex)
-  (define-key evil-motion-state-map ":" 'evil-repeat-find-char)
-  (defun bury-compile-buffer-if-successful (buffer string)
-    "Bury a compilation buffer if succeeded without warnings "
-    (if (and
-         (string-match "compilation" (buffer-name buffer))
-         (string-match "finished" string)
-         (not
-          (with-current-buffer buffer
-            (goto-char (point-min))
-            (search-forward "warning" nil t))))
-        (run-with-timer 1 nil
-                        (lambda (buf)
-                          (bury-buffer buf)
-                          (switch-to-prev-buffer (get-buffer-window buf) 'kill))
-                        buffer)))
-  (add-hook 'compilation-finish-functions 'bury-compile-buffer-if-successful)
+  ;; (define-key evil-motion-state-map ";" 'evil-ex)
+  ;; (define-key evil-motion-state-map ":" 'evil-repeat-find-char)
+  ;; (defun bury-compile-buffer-if-successful (buffer string)
+  ;;   "Bury a compilation buffer if succeeded without warnings "
+  ;;   (if (and
+  ;;        (string-match "compilation" (buffer-name buffer))
+  ;;        (string-match "finished" string)
+  ;;        (not
+  ;;         (with-current-buffer buffer
+  ;;           (goto-char (point-min))
+  ;;           (search-forward "warning" nil t))))
+  ;;       (run-with-timer 1 nil
+  ;;                       (lambda (buf)
+  ;;                         (bury-buffer buf)
+  ;;                         (switch-to-prev-buffer (get-buffer-window buf) 'kill))
+  ;;                       buffer)))
+  ;; (add-hook 'compilation-finish-functions 'bury-compile-buffer-if-successful)
 )
 
 ;; Do not write anything past this comment. This is where Emacs will
