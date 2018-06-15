@@ -1,11 +1,10 @@
 [user]
-	name = Ellis Kenyo
-	email = elken@member.fsf.org
+	name = Ellis Kenyő
+	email = elken@mykolab.com
         singingkey = 2033FDF3
 	signingkey = 2033FDF3
 [commit]
 	gpgsign = true
-	template = /Users/ellis/.stCommitMsg
 [push]
 	default = simple
 [github]
