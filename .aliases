@@ -23,8 +23,9 @@ alias workdone="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Cr
 alias git='hub'
 alias workflow="g add .;gca;gp"
 
-alias pacmir='pacaur -Syy'
-alias pacupg='pacaur -Syu'
-alias pacin='pacaur -S'
-alias pacrem='pacaur -R'
 alias cra='create-react-app'
+alias _dnf='sudo dnf'
+alias pacmir='_dnf update'
+alias pacupg='_dnf upgrade'
+alias pacin='_dnf install'
+alias pacrem='_dnf remove'
