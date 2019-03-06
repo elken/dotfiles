@@ -38,6 +38,6 @@
 
 - shell:
     - mv $HOME/.emacs.d $HOME/.emacs.d.old
-    - git clone https://github.com/blissner/doom-emacs/ $HOME/.emacs.d -b develop
+    - git clone https://github.com/hlissner/doom-emacs/ $HOME/.emacs.d -b develop
     - git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
