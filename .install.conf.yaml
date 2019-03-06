@@ -23,12 +23,9 @@
     ~/.ncmpcpp/config: .ncmpcpp/config
     ~/.pentadactyl:    .pentadactyl/
     ~/.pentadactylrc:  .pentadactylrc
-    ~/.spacemacs:      .spacemacs
     ~/.st:             .st/
     ~/.themes:         .themes/
     ~/.tmux.conf:      .tmux.conf
-    ~/.vimrc:          .vim/.vimrc
-    ~/.vim:            .vim/
     ~/.Xresources:     .Xresources
     ~/.Xresources.d:   .Xresources.d
     ~/.zlogin:         .zsh/prezto/runcoms/zlogin
@@ -40,9 +37,7 @@
     ~/.zsh:            .zsh/
 
 - shell:
-    - ln -s $HOME/.vim $HOME/.config/nvim
-    - ln -s $HOME/.vimrc $HOME/.config/nvim/init.vim
-    - mv $HOME/.emacs.d $HOME/.emacs.d
-    - git clone https://github.com/syl20bnr/spacemacs/ $HOME/.emacs.d
+    - mv $HOME/.emacs.d $HOME/.emacs.d.old
+    - git clone https://github.com/blissner/doom-emacs/ $HOME/.emacs.d -b develop
     - git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
