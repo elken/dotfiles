@@ -5,9 +5,9 @@
 Xcursor.theme: DMZ-Black
 
 ! Transparency
-!urxvt*.depth: 32
-!urxvt*.background: [80]#eee8d5
-!urxvt*.background:   [80]#282828
+urxvt*.depth: 32
+! urxvt*.background: [80]#eee8d5
+urxvt*.background:   [80]#282828
 
 ! Misc plugin junk
 urxvt*.scrollBar: false
@@ -32,7 +32,6 @@ urxvt*.keysym.Control-Right:    \033[1;5C
 ! Misc
 urxvt*urgentOnBell: true
 urxvt*.font: xft:Hasklig:size=8
-xterm*faceName: Meslo\ LG\ M\ for\ Powerline:size=8
 
 ! Scrolling
 urxvt*.scrollTtyOutput: false
@@ -41,3 +40,6 @@ urxvt*.scrollTtyKeypress: true
 urxvt*.secondaryScreen: 1
 urxvt*.secondaryScroll: 0
 
+! Styling things
+urxvt*.cursorBlink: true
+urxvt*.cursorUnderline: true
