@@ -1,21 +1,28 @@
 [submodule ".dotbot"]
 	path = .dotbot
 	url = https://github.com/anishathalye/dotbot
+	branch = master
 [submodule ".zsh/prezto"]
 	path = .zsh/prezto
 	url = git@github.com:elken/prezto.git
+	branch = master
 [submodule "bin"]
 	path = bin
 	url = git@github.com:elken/bin.git
+	branch = master
 [submodule ".dwm"]
 	path = .dwm
 	url = git@github.com:elken/dwm.git
+	branch = master
 [submodule ".st"]
 	path = .st
 	url = git@github.com:elken/st.git
+	branch = master
 [submodule ".vim"]
 	path = .vim
 	url = git@github.com:elken/.vim.git
+	branch = master
 [submodule ".tmux/plugins/tpm"]
 	path = .tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm
+	branch = master
