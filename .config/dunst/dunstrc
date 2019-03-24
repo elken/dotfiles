@@ -1,5 +1,5 @@
 [global]
-    font = Meslo LG M for Powerline 9
+    font = Hack 9
     
     # Allow a small subset of html markup:
     #   <b>bold</b>
@@ -171,18 +171,18 @@
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#859900"
-    foreground = "#002b36"
+    background = "#b8bb26"
+    foreground = "#3c3836"
     timeout = 10
 
 [urgency_normal]
-    background = "#002b36"
-    foreground = "#268bd2"
+    background = "#d79921"
+    foreground = "#3c3836"
     timeout = 10
 
 [urgency_critical]
-    background = "#dc322f"
-    foreground = "#002b36"
+    background = "#cc241d"
+    foreground = "#3c3836"
     timeout = 0
 
 
