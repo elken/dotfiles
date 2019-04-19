@@ -24,10 +24,11 @@
     ~/.pentadactyl:    .pentadactyl/
     ~/.pentadactylrc:  .pentadactylrc
     ~/.st:             .st/
-    ~/.themes:         .themes/
     ~/.tmux.conf:      .tmux.conf
     ~/.Xresources:     .Xresources
     ~/.Xresources.d:   .Xresources.d
+    ~/.vim:            .vim
+    ~/.vimrc:          .vim/.vimrc
     ~/.zlogin:         .zsh/prezto/runcoms/zlogin
     ~/.zlogout:        .zsh/prezto/runcoms/zlogout
     ~/.zpreztorc:      .zsh/prezto/runcoms/zpreztorc
@@ -37,7 +38,6 @@
     ~/.zsh:            .zsh/
 
 - shell:
-    - mv $HOME/.emacs.d $HOME/.emacs.d.old
-    - git clone https://github.com/hlissner/doom-emacs/ $HOME/.emacs.d -b develop
+    - ln -s $HOME/.vim $HOME/.config/nvim
     - git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
