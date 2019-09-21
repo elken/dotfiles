@@ -6,7 +6,7 @@ gnuunits=0
 
 # end and compare timer, notify-send if needed
 function notifyosd-precmd() {
-	retval=$?
+    retval=$?
     if [[ ${cmdignore[(r)$cmd_basename]} == $cmd_basename ]]; then
         return
     else
@@ -15,30 +15,18 @@ function notifyosd-precmd() {
             ((cmd_secs=$cmd_end - $cmd_start))
         fi
         if [ $retval -gt 0 ]; then
-			cmdstat="with warning"
-			sndstat="/usr/share/sounds/freedesktop/stereo/dialog-warning.oga"
-			urgency="critical"
-		else
+            cmdstat="with warning"
+        else
             cmdstat="successfully"
-			sndstat="/usr/share/sounds/freedesktop/stereo/bell.oga"
-			urgency="normal"
         fi
         if [ ! -z "$cmd" -a $cmd_secs -gt 10 ]; then
-			if [ $gnuunits -gt 0 ]; then
-				cmd_time=$(units "$cmd_secs seconds" "centuries;years;months;weeks;days;hours;minutes;seconds" | \
-						sed -e 's/\ +/\,/g' -e s'/\t//')
-			else
-				cmd_time="$cmd_secs seconds"
-			fi
-            if [ ! -z $SSH_TTY ] ; then
-                notify-send --expire-time=3000 -i utilities-terminal \
-						-u $urgency "$cmd_basename on `hostname` completed $cmdstat" "\"$cmd\" took $cmd_time"; \
-						play -q $sndstat
+            if [ $gnuunits -gt 0 ]; then
+                cmd_time=$(units "$cmd_secs seconds" "centuries;years;months;weeks;days;hours;minutes;seconds" | \
+                sed -e 's/\ +/\,/g' -e s'/\t//')
             else
-                notify-send --expire-time=3000 -i utilities-terminal \
-						-u $urgency "$cmd_basename completed $cmdstat" "\"$cmd\" took $cmd_time"; \
-						play -q $sndstat
+                cmd_time="$cmd_secs seconds"
             fi
+            notify-send -i utilities-terminal --hint=int:transient:1 "$cmd_basename completed $cmdstat" "\"$cmd\" took $cmd_time"
         fi
         unset cmd
     fi

@@ -23,7 +23,7 @@ alias workdone="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Cr
 alias git='hub'
 alias workflow="g add .;gca;gp"
 
-alias _dnf='sudo dnf'
+alias _dnf='sudo apt'
 alias pacmir='_dnf update'
 alias pacupg='_dnf upgrade'
 alias pacin='_dnf install'
