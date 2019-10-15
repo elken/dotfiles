@@ -1,2 +1,6 @@
 # My dotfiles
-dotfiles
+
+## TODO
+
+- Cleanup
+- Distro-agnostic pacman
